@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style type="text/css">
+	
+        .info-pill-live-now { background: #9F181A; color: #FFFFFF; }
+
+        .info-pill-live-now, .info-pill-up-next { display: none; }
+        .live-now .info-pill-live-now { display: inline-block; }
+        .up-next .info-pill-up-next { display: inline-block; }
+
+        #live-program .live-program-event-presenter {
+            float: right;
+            width: 7rem;
+            max-width: 7rem;
+            margin: 0 0 0 0;
+            padding: .5rem;
+
+        }
+
+        #live-program .live-program-event-presenter img {
+        max-width: 6rem;
+        margin-right: 1rem;
+        
+        }
+
+        #live-program .live-program-event-info {
+            width: 80%;
+            margin-right: 20%;
+        }
+
+        span.session-time { color: #666; font-weight:600; padding-right: .8rem; }
+
+        #live-program .live-program-event-info .presenter-info {
+            height: 3rem;
+            display: inline-block;
+            vertical-align: top;
+            font-weight: 600;
+
+        }
+
+        #live-program .live-program-event-info .presenter-company {
+            width: 2rem;
+        }
+
+        #live-program .live-program-event-desc {
+            width: 80%;
+            clear: both;
+            padding: 1rem 0 !important;
+            margin-right: 20%;
+            margin-right: 0%;
+        }
+
+            #live-program .live-program-event-desc dt { 
+                font-size:1rem; 
+                font-weight: 600;
+            }
+
+            #live-program .live-program-event-desc dd { 
+                margin: 0;
+                padding: 0;
+                font-size:1rem; }
+
+        #live-program .live-program-event-info h4 { border-bottom: 1px solid #EFEFEF; padding: 0 0 .4rem 0 !important; margin: 1.6rem 0 !important }
+
+        .live-program-event { 
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 1rem;
+        }
+
+        .past-session { opacity:.4; }
+        .live-now { border: 2px solid #EDDEFF; }
+        .up-next { border: 2px solid #99AAAB; }
+
+
+
+		.blob {
+			display: inline-block;
+			background: #FFFFFF;
+			border-radius: 50%;
+			margin: 0 .4rem 0 0;
+			height: 7px;
+			width: 7px;
+
+			box-shadow: 0 0 0 0 rgba(240, 240, 240, 1);
+			transform: scale(1);
+			animation: pulse 2s infinite;
+		}
+
+		@keyframes pulse {
+			0% {
+				transform: scale(0.95);
+				box-shadow: 0 0 0 0 rgba(240, 240, 240, 0.7);
+			}
+
+			70% {
+				transform: scale(1);
+				box-shadow: 0 0 0 10px rgba(210, 210, 210, 0);
+			}
+
+			100% {
+				transform: scale(0.95);
+				box-shadow: 0 0 0 0 rgb(180, 180, 180, 0);
+			}
+		}
+
+    </style>
+    <div id="live-program">
+		<div class="live-program-event live-now"> <!--Berlin - Welcome address -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/aa006c66-e80f-429f-9015-fbefd065fff7/berlin-liew.png">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">9:30 AM &mdash; 9:50 AM</span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Welcome address</h4>
+				<span class="presenter-info">Berlin Liew is a Snr Product Designer at <img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/9377ff33-bfc4-436b-99f2-a1eb7da78e4e/1563166901616.png" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>A warm welcome and introduction to the conference from our MC, Berlin Liew.</p>
+					<p>Berlin will share her perspectives on the future of design and creativity, as well as her hopes, fears, and dreams for the design industry at large.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event up-next">  <!-- Chi - dude, where's my creativity -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/cd52b284-4b27-40f7-9223-1a7e09ce4bec/Chi+Ryan.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">9:50 AM to 10:30 AM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Dude, where's my creativity?</h4>
+				<span class="presenter-info">Chi Ryan is a PhD Candidate at <img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/d409ec59-af7b-4f73-90cf-1d748a7ec707/1656982678675.jpeg?format=100w" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Da Vinci, Einstein, Dali, Kubrick, Disney, Rhianna and Weird Al all have a knack for tapping into their creativity: but what about the rest of us? If creativity really is innate in all of us, why does it vanish when we need it most? </p>
+					<p>Join Design Practitioner and Theorist Chi Ryan as she explores her creative process via her childhood, memories and the worlds of design, film and philosophy for clues about where creativity resides and how to keep it flowing. Prepare for a wild ride with an ending you didn't see coming!</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!--Jonathon - Infinite Possibilities, Singular Purpose -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/3855f7e3-0559-4a23-bd1c-81ba7cfad2ca/jon+profile+square+grey.JPG?content-type=image%2Fjpeg">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">10:30 AM to 10:50 AM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Infinite Possibilities, Singular Purpose: Discovering Your Creative Drive</h4>
+				<span class="presenter-info">Jonathon Lau is UX and Product Design Lead <img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/acd0fe9f-56e6-4e5c-b95e-cdde8d190c34/1657054972290.png?content-type=image%2Fpng" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Feeling the pressure in a world filled with infinite creative possibilities? With an endless explosion of powerful creative tools and new opportunities, there’s never been a more crucial time to pause and reflect, focusing your efforts on finding a singular purpose and igniting your creative drive.</p>
+					<p>In this presentation, Jonathon shares a structured approach that will make it easy for you to navigate the chaos of choice and possibilities to discover your authentic passion and purpose. Jon will explore the importance and many benefits of focusing your energy in an era bursting with opportunity.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!--Roya - How to be creative -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/122053a7-7907-4d6d-980e-dc923e8224e5/Roya+Azadi.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">10:50 AM to 11:10 AM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>How to be creative</h4>
+				<span class="presenter-info">Roya A. Azadi is Strategy Director at <img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/4f691809-f62a-42b3-8fcc-22a762a216b5/1550726197787.jpeg?format=100w" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Professional creative and strategic designer Roya Azadi will cover techniques to encourage creative thinking and show how you can unlock your creative potential. Roya will reveals that technology is inhibiting our ability to daydream and explains why this headspace is so important if you want to ‘catch a live one’. </p>
+					<p>You’ll learn to not fear failure by understanding that it’s actually fertile ground for creativity.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+
+		<div class="live-program-event"> <!-- Break -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/d406fa32-27f8-4f52-8411-d37ad3b221b7/Mabu-Mabu-Logo-Master.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">5:30 PM to 7:30 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Short break</h4>
+			</div>
+				
+			<span class="clear"></span>
+		</div>	
+
+
+		<div class="live-program-event"> <!-- Vinita - Design duality -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/1954a1d8-62e7-45c6-a31c-892a8014e79e/Option-7.png">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">11:30 AM to 11:55 AM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>This or that: Duality of Design</h4>
+				<span class="presenter-info">Vinita Israni is a UX Manager at <img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/2049813f-825e-4a3a-82d9-ba614f125b63/qantas-logo.jpeg?content-type=image%2Fjpeg" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>We are living in an age where we are constantly forced to choose sides (pancake vs waffle, nature vs nurture, blue pill vs red pill). The seemingly dichotomous nature of our environments trickles into our design practice as we make decisions for the future. </p>
+					<p>Drawing on examples from industry and academia, Vinita will examine how designers can reconcile opposites on the spectrum(s) to tap into the power of duality to supercharge your creativity.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!-- Tom - Creative innovation in aciton -->
+			<div class="live-program-event-presenter">
+				<img src="ttps://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/12f354ff-81ee-48bf-8033-5763c108dd56/aa-18-speaker-Tom-Wall-400.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">11:55 AM to 12:50 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Creative innovation in action</h4>
+				<span class="presenter-info">Tom Wall is Head of Design at <img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/954c798d-0e2e-4617-998c-41d7ea176640/1656634137894.jpeg?format=100w" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Tom will take us through creativity and innovation in action as a series of practical case studies and steps we can use to bring creativity to our work on a daily basis.</p>
+					<p>By leveraging the tools around us, like AI, design systems, designops, and more, we can free up time from the process of designing and spend more time doing the things we love&emdash;solving problems.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>		
+
+		<div class="live-program-event"> <!-- Jess - Designerly magic -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/6f082764-cd36-43a1-b641-afeed748bf20/Option.png?content-type=image%2Fpng">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">12:15 PM to 12:35 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>How to design magical experiences in the AI era</h4>
+				<span class="presenter-info">Jess Faccin is a Product Design Lead at <img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/be1a2cce-b52d-4952-9158-32ca37bf1d9c/canva-logo.png?content-type=image%2Fpng" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>With the proliferation of AI and emerging technologies lately, it’s a common reaction to add these innovations to our products and add complexity to the experience. As trends and technologies continue to evolve and saturate the market, how can we stay relevant and retain a competitive edge?</p>
+					<p>Jess will explore why we need to reframe the way we think about innovation in order to create cultural shifts, and how to create impactful experiences that people will love and remember.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!-- Lunch --> 
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/d406fa32-27f8-4f52-8411-d37ad3b221b7/Mabu-Mabu-Logo-Master.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">12:30 PM to 1:30 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Tuckerbox lunches</h4>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Mabu Mabu is an Indigenous owned food business on a mission to make native ingredients the hero of the Australian kitchen. </p>
+					<p>The team at Mabu Mabu believe that food is one of the greatest ways we can share both culture and community and look forward to introducing you to ours. We couldn’t agree more.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!--Trudi - Playful panel -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/fa619908-08dc-4144-bfd0-86d1374bca0a/Option-2.png?content-type=image%2Fpng">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">1:30 PM to 2:10 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Playful panel</h4>
+				<span class="presenter-info">Trudi Boatwright is an Experiential Designer</span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Trudi and three panellists will discuss creativity and playfulness</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!-- MC - Conscious creativity -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/f334f646-2c64-4d3e-83b5-d741111dfdf4/MC+Monsalve.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">2:10 PM to 2:35 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Conscious creativity </h4>
+				<span class="presenter-info">MC Monsalve is a Snr Manager of Design at <img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/8bce7407-bb38-42ab-b42e-a89c33859118/1519856403223.jpeg?format=100w" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Creative thinking is vital in solving complex problems, and it is a uniquely human ability that should be nurtured in designers and leaders alike. While we should acknowledge and comprehend AI, it is essential to maintain a human touch in design. As designers and leaders, we should allow our teams to explore their creativity and push boundaries while also guiding decisions on AI's use by our companies.</p>
+					<p>Mary-Claire will deliver a presentation on the significance of design leadership in the age of AI. She will emphasise the crucial role of creativity in design and how it cannot be substituted by AI, despite the changes brought about by technology.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event">  <!-- Ming - Creative energies -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/0e39f9db-81d4-4a4b-94f0-b1662cb22bc0/Option-3.png">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">2:35 PM to 2:55 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Harnessing creative energies</h4>
+				<span class="presenter-info">Ming Lee is a Design lead, Dancer </span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Imagine how creativity would flourish in a space where people's energies are directed to organisational and customer needs in a way that allows them to apply and grow their skills in the areas that they wish to. To create such a space, people need to have reflected and shared what they CAN do, ENJOY doing and would like to GROW more in.</p>
+					<p>Ming will be sharing a fun and practical whiteboard to do exactly this. Empower teams, individuals, growth and collaboration!</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!-- Snacks --> 
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/d406fa32-27f8-4f52-8411-d37ad3b221b7/Mabu-Mabu-Logo-Master.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">2:55 PM to 3:25 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Snacks</h4>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Mabu Mabu are back with snacks to sustain us through the afternoon</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!-- Ben - Creative class -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/ceba4528-07da-43c2-9192-4f31fcea25b7/Ben+Keenan.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">3:25 PM to 3:50 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4> </h4>
+				<span class="presenter-info">Ben Keenan is Director at Thought Police</span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>The creative class</a></h4>
+				<p>What exactly is creativity and why is it valuable? In this keynote, one of Australia’s most awarded, and prolific creative directors steps you through his work, his process and what he sees as the skills needed to adapt and thrive in these times of uncertainty. </p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!-- Jeanette - Exponential intelligence -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/412a2deb-8d6e-403e-8134-86bc5b973bd9/Hex200522-101+%281%29.jpg?content-type=image%2Fjpeg">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">3:50 PM to 4:20 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>How Exponential Intelligence could be your unfair advantage</h4>
+				<span class="presenter-info">Jeanette Cheah is CEO & Co-Founder at <img src="https://images.squarespace-cdn.com/content/638ff3f8956f912c0ac2c749/45d91b31-69ec-4f6e-849e-2c7d8da6866c/1641771557865.png?content-type=image%2Fpng" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>If IQ is all about how smart you are, and EQ is all about how well you can manage people… then what on earth is eXQ? – and how can we use it to predict who will rise to be leaders in the workplace?</p>
+					<p>In this engaging and thought provoking session, you’ll learn all about harnessing and increasing your own XQ (Exponential Intelligence), and the mindsets, skillsets and toolsets which will set you apart as a leader or founder in the rapidly-changing, technical and creative world.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!-- Pete - Dungeon master -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/f01a5603-1725-46dc-abdc-531de66ed481/Pete+Barber.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">4:20 PM to 4:45 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Your design team needs a dungeon master </h4>
+				<span class="presenter-info">Peter Barber is a Snr Product Design Mgr at <img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/8088cb3f-4527-4b87-92af-104fac81c675/1638394846604.jpeg?format=100w" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>In Dungeons and Dragons, a group of adventurers play a self-evolving story, led by a Dungeon Master who sets challenges with no one solution.</p>
+					<p>This presentation will distil the learnings from the session and would cover servant leadership, being solution ambiguous, building a narrative and what to do when things go wrong. I've got a bunch of clips from the session and would also be keen to explore an open ended, live interview we could have on stage.</p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!-- Barbara + Rodger - Creative reboot -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/ec7a2494-e060-4fb1-8cb4-8942d5ccde02/Barbara+Doran.png?format=300w">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/387a1e80-241c-42ad-8406-4ffda9d1c220/Rodger+Watson.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">4:45 PM to 5:25 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Creative reboot</h4>
+				<span class="presenter-info">Barbara Doran is a Lecturer & Researcher, and Rodger Watson is a Lecturer & Course Director at <img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/583b12f2-af69-4ad5-a1b0-e40e3adb1644/1519874497151.jpeg?format=100w" class="presenter-company"></span>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Whether you are a rigid analytical thinker or an accomplished creative mind, Barbara and Rodger will take you through their perspectives on the creative reboot we need, and you'll learn to harness your creativity to create, diverge from, and converge into new inventive pathways, finding innovative approaches to complex problems. </p>
+					<p></p>
+				</dd>
+			</dl>
+				
+			<span class="clear"></span>
+		</div>
+
+		<div class="live-program-event"> <!-- Afterparty -->
+			<div class="live-program-event-presenter">
+				<img src="https://images.squarespace-cdn.com/content/v1/638ff3f8956f912c0ac2c749/d406fa32-27f8-4f52-8411-d37ad3b221b7/Mabu-Mabu-Logo-Master.png?format=300w">
+			</div>	
+
+			<div class="live-program-event-info">
+				<span class="session-time">5:30 PM to 7:30 PM </span> <span class="info-pill info-pill-live-now"><span class="blob"></span> Happening now</span> <span class="info-pill info-pill-green info-pill-up-next">Up next</span>
+				<h4>Afterparty - closing drinks and canapes</h4>
+			</div>
+			<dl class="live-program-event-desc accordion">
+				<dt><a href="">Session description</a></dt>
+				<dd class="session-description">
+					<p>Our friends at Mabu Mabu will help is close off the day with drinks and canapes at our closing party</p>
+				</dd>
+			</dl>
+			<span class="clear"></span>
+		</div>	
+    </div>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/bcd22b8f577fcf0d947d573b0/e61f6771bc30a2d36402b7261.js");</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $('.scrollable-nav').each(function() {
+            $(this).scrollTo('.active', {duration:500, offset: {left:-20} });
+            });
+        
+            
+            function openFirstPanel(){
+            $('.accordion > dt:first-child').next().addClass('active').slideDown();
+            }
+
+            (function($) {
+
+            var allPanels = $('.accordion > dd').hide();
+
+            //openFirstPanel();
+
+            $('.accordion > dt > a').click(function() {
+                $this = $(this);
+                $target =  $this.parent().next();
+
+
+                if($target.hasClass('active')){
+                    $target.removeClass('active').slideUp(); 
+                }else{
+                    allPanels.removeClass('active').slideUp();
+                    $target.addClass('active').slideDown();
+                }
+
+                return false;
+            });
+
+            })(jQuery);
+            
+
+            $.scrollTo('.live-now', {duration:1000, offset: {top:-40}});
+            
+            
+        });
+    </script>
+</body>
+</html>
